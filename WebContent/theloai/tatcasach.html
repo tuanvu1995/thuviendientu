@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>tất cả sách</title>
+ <script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="../js/jquery-1.11.1.min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<div w3-include-html="../menu2.html"></div> 
+	<div class="container-fluid">
+		<h3>Tất cả sách</h3>
+		<div class="well well-sm text">
+			<strong style="font-size: 30px; color: #00CCFF;">Tất cả sách</strong>
+		<div class="well well-sm text-right">
+			<strong>Chọn kiểu hiển thị</strong>
+			<div class="btn-group">
+				<a href="#" id="list" class="btn btn-default btn-sm"> <span
+					class="glyphicon glyphicon-th-list"> </span>Dạng danh sách
+				</a> <a href="#" id="grid" class="btn btn-default btn-sm"> <span
+					class="glyphicon glyphicon-th"></span>Dạng lưới
+				</a>
+			</div>
+		</div>
+
+		<div id="products" class="row list-group">
+		
+			<div class="item  col-xs-3 col-lg-3">
+				<div class="thumbnail">
+					<img style="width: 200px; height: 300px" src="../image/sach1.jpg">
+					<div class="caption">
+						<h4 class="group inner list-group-item-heading">Ngủ Thật Lâu - Yêu Thật Sâu - Những Lời Khuyên
+									Thông Thái Từ Loài Mèo</h4>
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<p>Tác giả: Francesco Marciuliano</p>
+							</div>
+							
+							<div class="col-xs-12 col-md-6">
+								<a class="btn btn-success" href="#">Chi tiết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="item  col-xs-3 col-lg-3">
+				<div class="thumbnail">
+					<img style="width: 200px; height: 300px" src="../image/sach1.jpg">
+					<div class="caption">
+						<h4 class="group inner list-group-item-heading">Ngủ Thật Lâu - Yêu Thật Sâu - Những Lời Khuyên
+									Thông Thái Từ Loài Mèo</h4>
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<p>Tác giả: Francesco Marciuliano</p>
+							</div>
+							
+							<div class="col-xs-12 col-md-6">
+								<a class="btn btn-success" href="#">Chi tiết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="item  col-xs-3 col-lg-3">
+				<div class="thumbnail">
+					<img style="width: 200px; height: 300px" src="../image/sach1.jpg">
+					<div class="caption">
+						<h4 class="group inner list-group-item-heading">Ngủ Thật Lâu - Yêu Thật Sâu - Những Lời Khuyên
+									Thông Thái Từ Loài Mèo</h4>
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<p>Tác giả: Francesco Marciuliano</p>
+							</div>
+							
+							<div class="col-xs-12 col-md-6">
+								<a class="btn btn-success" href="#">Chi tiết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="item  col-xs-3 col-lg-3">
+				<div class="thumbnail">
+					<img style="width: 200px; height: 300px" src="../image/sach1.jpg">
+					<div class="caption">
+						<h4 class="group inner list-group-item-heading">Ngủ Thật Lâu - Yêu Thật Sâu - Những Lời Khuyên
+									Thông Thái Từ Loài Mèo</h4>
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<p>Tác giả: Francesco Marciuliano</p>
+							</div>
+							
+							<div class="col-xs-12 col-md-6">
+								<a class="btn btn-success" href="#">Chi tiết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="item  col-xs-3 col-lg-3">
+				<div class="thumbnail">
+					<img style="width: 200px; height: 300px" src="../image/sach1.jpg">
+					<div class="caption">
+						<h4 class="group inner list-group-item-heading">Ngủ Thật Lâu - Yêu Thật Sâu - Những Lời Khuyên
+									Thông Thái Từ Loài Mèo</h4>
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<p>Tác giả: Francesco Marciuliano</p>
+							</div>
+							
+							<div class="col-xs-12 col-md-6">
+								<a class="btn btn-success" href="#">Chi tiết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="item  col-xs-3 col-lg-3">
+				<div class="thumbnail">
+					<img style="width: 200px; height: 300px" src="../image/sach1.jpg">
+					<div class="caption">
+						<h4 class="group inner list-group-item-heading">Ngủ Thật Lâu - Yêu Thật Sâu - Những Lời Khuyên
+									Thông Thái Từ Loài Mèo</h4>
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<p>Tác giả: Francesco Marciuliano</p>
+							</div>
+							
+							<div class="col-xs-12 col-md-6">
+								<a class="btn btn-success" href="#">Chi tiết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="item  col-xs-3 col-lg-3">
+				<div class="thumbnail">
+					<img style="width: 200px; height: 300px" src="../image/sach1.jpg">
+					<div class="caption">
+						<h4 class="group inner list-group-item-heading">Ngủ Thật Lâu - Yêu Thật Sâu - Những Lời Khuyên
+									Thông Thái Từ Loài Mèo</h4>
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<p>Tác giả: Francesco Marciuliano</p>
+							</div>
+							
+							<div class="col-xs-12 col-md-6">
+								<a class="btn btn-success" href="#">Chi tiết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="item  col-xs-3 col-lg-3">
+				<div class="thumbnail">
+					<img style="width: 200px; height: 300px" src="../image/sach1.jpg">
+					<div class="caption">
+						<h4 class="group inner list-group-item-heading">Ngủ Thật Lâu - Yêu Thật Sâu - Những Lời Khuyên
+									Thông Thái Từ Loài Mèo</h4>
+						<div class="row">
+							<div class="col-xs-12 col-md-6">
+								<p>Tác giả: Francesco Marciuliano</p>
+							</div>
+							
+							<div class="col-xs-12 col-md-6">
+								<a class="btn btn-success" href="#">Chi tiết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			</div>
+		</div>
+		</div>
+		
+	<script>
+includeHTML();
+</script>
+</body>
+</html>

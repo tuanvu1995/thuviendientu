@@ -2,6 +2,102 @@ body {
   padding-left: 60px;
   padding-right: 60px;
 }
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ 
+html, body{
+    background-color:#F2F2F2;
+    font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    text-align:center;
+    color:#404040;
+    position:relative;
+}
+ 
+a{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+ 
+.wrapper{
+    width:450px;
+    margin:30px auto 0;
+    background-color:#FFFFFF;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ 
+header{
+    text-align:right;
+    padding:10px;
+    margin-bottom:10px;
+    background-color:#5DBA9D;
+}
+ 
+header a{
+    font-size:20px;
+    color:#FFFFFF;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:10px;
+    text-align:center;
+    display:inline-block;
+}
+ 
+header a:hover, .list-mode header a.hide-list:hover{
+    background-color:#11956c;
+}
+ 
+header a.hide-list{
+    background-color:#11956c;
+}
+ 
+.list-mode header a.hide-list{
+    background-color:#5DBA9D;
+}
+ 
+.list-mode header a.show-list{
+    background-color:#11956c;
+}
+ 
+.container:after{
+    content:"";
+    clear:both;
+    display:table;
+}
+ 
+.container{
+    padding:10px 0 10px 10px;
+}
+.wrapper .box{
+    float:left;
+    width:100px;
+    height:100px;
+    margin:0 10px 10px 0;
+    background-color:#CCCCCC;
+    -webkit-transition:all 1.0s ease;
+    -moz-transition:all 1.0s ease;
+    transition:all 1.0s ease;
+    transition:all 1.0s ease;
+}
+ 
+.wrapper.list-mode .container{
+    padding-right:10px;
+}
+ 
+.wrapper.list-mode .box{
+    width:100%;
+}
 
 .header,
 .marketing,
@@ -8250,31 +8346,31 @@ button.close {
     display: none !important;
   }
 }
-Gỡ bỏ tất cả chú thích
+Gá»¡ bá»� táº¥t cáº£ chÃº thÃ­ch
 
-Nến siêu gọn
+Náº¿n siÃªu gá»�n
 
-Giữ thụt đầu dòng trong @query {}
+Giá»¯ thá»¥t Ä‘áº§u dÃ²ng trong @query {}
 
-Loại bỏ các dấu chấm phẩy cuối cùng
+Loáº¡i bá»� cÃ¡c dáº¥u cháº¥m pháº©y cuá»‘i cÃ¹ng
 
-Nén CSS
-Hình thức bố cục nội dòng
+NÃ©n CSS
+HÃ¬nh thá»©c bá»‘ cá»¥c ná»™i dÃ²ng
 
-Thụt đầu dòng: 
-Một Tab  4 dấu cách
+Thá»¥t Ä‘áº§u dÃ²ng: 
+Má»™t Tab  4 dáº¥u cÃ¡ch
 
-Chia đa bộ chọn (e.g: html,\nbody,\ntable {})
+Chia Ä‘a bá»™ chá»�n (e.g: html,\nbody,\ntable {})
 
-Khoảng cách giữa thuộc tính : giá trị ;
+Khoáº£ng cÃ¡ch giá»¯a thuá»™c tÃ­nh : giÃ¡ trá»‹ ;
 
-Viết cùng dòng khi chỉ có một thuộc tính
+Viáº¿t cÃ¹ng dÃ²ng khi chá»‰ cÃ³ má»™t thuá»™c tÃ­nh
 
-Xóa các dấu chấm phẩy cuối cùng
+XÃ³a cÃ¡c dáº¥u cháº¥m pháº©y cuá»‘i cÃ¹ng
 
-Xóa hoặc tạo khoảng cách mỗi dòng
+XÃ³a hoáº·c táº¡o khoáº£ng cÃ¡ch má»—i dÃ²ng
 
-Làm đẹp CSS code
+LÃ m Ä‘áº¹p CSS code
 Highlighted Code:
 body {
   padding-top: 20px;
