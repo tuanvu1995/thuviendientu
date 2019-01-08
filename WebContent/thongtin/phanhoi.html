@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Group 9 - Human Comuter Interation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/phanhoi_css.css">
+<!-- Add icon library -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Add css online library -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Add bootrap online library -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+#sidebar li {
+	float: left;
+	margin-left: 30px;
+}
+
+.footer {
+	padding-top: 19px;
+	color: #777;
+	border-top: 1px solid #e5e5e5;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.footer p {
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="header clearfix"
+			style="padding-bottom: 0px; background-color: #ded6d6; corlor: #FFF; display: block; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; z-index: 100000; width: 100%;">
+			<nav class="nav">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header" style="color: #FFF;">
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+						aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="../index.html">Group 9 - HCI</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse"
+					id="bs-example-navbar-collapse-1" style="color: #FFF;">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="../index.html">Trang chủ <span
+								class="sr-only">(current)</span></a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">Thể loại sách <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="../theloai/tamly-kynangsong.html"> Tâm lý
+										- Kỹ năng sống</a></li>
+								<li><a href="../theloai/kinhte-quanly.html"> Kinh tế -
+										Quản lý</a></li>
+								<li><a href="../theloai/marketing-banhang.html">
+										Marketing - Bán hàng </a></li>
+								<li><a href="../theloai/yhoc-suckhoe.html"> Y học - Sức
+										khỏe</a></li>
+								<li><a href="../theloai/ngoaingu.html"> Ngoại ngữ</a></li>
+								<li><a href="../theloai/khoahoc-kythuat.html"> Khoa học
+										- Kỹ thuật</a></li>
+								<li><a href="../theloai/thethao-nghethuat.html"> Thể
+										thao - Nghệ thuật</a></li>
+								<li><a href="../theloai/trinhtham-hinhsu.html"> Trinh
+										thám - Hình sự</a></li>
+							</ul></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">Thông tin <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="loinoidau.html"> Lời nói đầu</a></li>
+								<li><a href="banquyen.html">Bản quyền</a></li>
+								<li><a href="lienhe.html">Liên hệ</a></li>
+								<li><a href="phanhoi.html">Phản hồi</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="baocao.html">Báo Cáo Vi Phạm</a></li>
+							</ul></li>
+					</ul>
+
+					<ul class="nav navbar-nav" style="float: right;">
+						<li class="active"><a href="../Login.html">Đăng nhập<span
+								class="sr-only">(current)</span></a></li>
+						<li class="active"><a href="../register.html">Đăng kí<span
+								class="sr-only">(current)</span></a></li>
+					</ul>
+
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+
+		<!---------------------------- CONTENT ------------------------------------>
+		<div class="container">
+			<div class="row" style="margin-top: 60px;">
+				<div class="col-sm-2"></div>
+				<!--------------------  frame -------------------->
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-sm-1"></div>
+						<div class="col-sm-10" id="response-frame">
+							<!-- frame header -->
+							<h3>Bắt đầu phản hồi mới</h3>
+							<!-- massage header -->
+							<input type="text" placeholder="Tiêu đề phản hồi...">
+							<!-- massage content -->
+							<textarea></textarea>
+							<!-- button -->
+							<div class="row">
+								<div class="col-sm-3"></div>
+								<div class="col-sm-3">
+									<button>Gửi phản hồi</button>
+								</div>
+								<div class="col-sm-3">
+									<button>Xem trước</button>
+								</div>
+								<div class="col-sm-3"></div>
+							</div>
+						</div>
+						<div class="col-sm-1"></div>
+					</div>
+				</div>
+				<!--------------------  end frame -------------------->
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+		<footer class="footer">
+			<p>
+				Copyright &copy; 2018 Group9, <b>Human Computer Interation</b>.
+			</p>
+		</footer>
+</body>
+</html>
