@@ -1,55 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Sign Up</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Group 9 - Thư viện điện tử</title>
 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- Font Icon -->
 <link rel="stylesheet"
 	href="fonts/material-icon/css/material-design-iconic-font.min.css">
 
 <!-- Main css -->
 <link rel="stylesheet" href="css/style_Login.css">
-<script>
-	function includeHTML() {
-		var z, i, elmnt, file, xhttp;
-		/*loop through a collection of all HTML elements:*/
-		z = document.getElementsByTagName("*");
-		for (i = 0; i < z.length; i++) {
-			elmnt = z[i];
-			/*search for elements with a certain atrribute:*/
-			file = elmnt.getAttribute("w3-include-html");
-			if (file) {
-				/*make an HTTP request using the attribute value as the file name:*/
-				xhttp = new XMLHttpRequest();
-				xhttp.onreadystatechange = function() {
-					if (this.readyState == 4) {
-						if (this.status == 200) {
-							elmnt.innerHTML = this.responseText;
-						}
-						if (this.status == 404) {
-							elmnt.innerHTML = "Page not found.";
-						}
-						/*remove the attribute, and call this function once more:*/
-						elmnt.removeAttribute("w3-include-html");
-						includeHTML();
-					}
-				}
-				xhttp.open("GET", file, true);
-				xhttp.send();
-				/*exit the function:*/
-				return;
-			}
-		}
-	};
-</script>
 </head>
 <body>
+	<div class="main"">
+		<div class="header clearfix"
+			style="padding-bottom: 0px; background-color: #ded6d6; corlor: #FFF; display: block; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; z-index: 100000; width: 100%;">
+			<nav class="nav">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header" style="color: #FFF;">
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+						aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Group 9 - HCI</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse"
+					id="bs-example-navbar-collapse-1" style="color: #FFF;">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Trang chủ <span
+								class="sr-only">(current)</span></a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">Thể loại sách <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="theloai/tamly-kynangsong.html"> Tâm lý -
+										Kỹ năng sống</a></li>
+								<li><a href="theloai/kinhte-quanly.html"> Kinh tế -
+										Quản lý</a></li>
+								<li><a href="theloai/marketing-banhang.html"> Marketing
+										- Bán hàng </a></li>
+								<li><a href="theloai/yhoc-suckhoe.html"> Y học - Sức
+										khỏe</a></li>
+								<li><a href="theloai/ngoaingu.html"> Ngoại ngữ</a></li>
+								<li><a href="theloai/khoahoc-kythuat.html"> Khoa học -
+										Kỹ thuật</a></li>
+								<li><a href="theloai/thethao-nghethuat.html"> Thể thao
+										- Nghệ thuật</a></li>
+								<li><a href="theloai/trinhtham-hinhsu.html"> Trinh thám
+										- Hình sự</a></li>
+							</ul></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">Thông tin <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="thongtin/loinoidau.html"> Lời nói đầu</a></li>
+								<li><a href="thongtin/banquyen.html">Bản quyền</a></li>
+								<li><a href="thongtin/lienhe.html">Liên hệ</a></li>
+								<li><a href="thongtin/phanhoi.html">Phản hồi</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="thongtin/baocao.html">Báo Cáo Vi Phạm</a></li>
+							</ul></li>
+					</ul>
 
-	<div class="main">
-		<div w3-include-html="menu.html"></div>
+					<ul class="nav navbar-nav" style="float: right;">
+						<li class="active"><a href="Login.html">Đăng nhập<span
+								class="sr-only">(current)</span></a></li>
+						<li class="active"><a href="register.html">Đăng kí<span
+								class="sr-only">(current)</span></a></li>
+					</ul>
+
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+			</div>
 		<!-- Sign up form -->
 		<section class="signup">
 			<div class="container">
@@ -101,7 +141,6 @@
 				</div>
 			</div>
 		</section>
-
 
 	</div>
 	<script>
